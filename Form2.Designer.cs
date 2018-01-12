@@ -163,7 +163,7 @@
             // 
             // panelC7
             // 
-            this.panelC7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.panelC7.BackColor = System.Drawing.Color.Coral;
             this.panelC7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelC7.Location = new System.Drawing.Point(24, 291);
             this.panelC7.Name = "panelC7";

@@ -9,6 +9,7 @@ namespace Lab2_1
 {
     public abstract class Ship :ITransport
     {
+        public abstract string getInfo();
         protected float startPosX;
         protected float startPosY;
         protected int countPassengers;

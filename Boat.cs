@@ -17,7 +17,7 @@ namespace Lab2_1
             }
             protected set
             {
-                if(value >0 && value < 300)
+                if (value > 0 && value < 300)
                 {
                     base.MaxSpeed = value;
                 }
@@ -77,6 +77,18 @@ namespace Lab2_1
             startPosY = rand.Next(10, 200);
         }
 
+        public Boat(string info)
+        {
+            string[] strs = info.Split(';');
+            if (strs.Length == 4)
+            {
+                MaxSpeed = Convert.ToInt32(strs[0]);
+                MaxCountPassengers = Convert.ToInt32(strs[1]);
+                Weight = Convert.ToInt32(strs[2]);
+                ColorBody = Color.FromName(strs[3]);
+            }
+        }
+
         public override void moveCat(Graphics g)
         {
 			startPosX += MaxSpeed;
@@ -110,6 +122,12 @@ namespace Lab2_1
 
             Brush brBrown = new SolidBrush(Color.Brown);
             g.FillRectangle(brBrown, startPosX + 15, startPosY + 15, 60, 25);
+        }
+
+        public override string getInfo()
+        {
+            return MaxSpeed + ";" + MaxCountPassengers + ";" +
+                Weight + ";" + ColorBody.Name;
         }
     }
 }

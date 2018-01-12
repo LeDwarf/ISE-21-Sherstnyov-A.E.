@@ -22,6 +22,21 @@ namespace Lab2_1
             this.dopColor = dopColor;
         }
 
+        public Cat(string info) : base(info)
+        {
+            string[] strs = info.Split(';');
+            if (strs.Length == 7)
+            {
+                MaxSpeed = Convert.ToInt32(strs[0]);
+                MaxCountPassengers = Convert.ToInt32(strs[1]);
+                Weight = Convert.ToInt32(strs[2]);
+                ColorBody = Color.FromName(strs[3]);               
+                leftBob = Convert.ToBoolean(strs[4]);
+                rightBob = Convert.ToBoolean(strs[5]);
+                dopColor = Color.FromName(strs[6]);
+            }
+        }
+
         protected override void drawSportCat(Graphics g)
         {
             if (leftBob)
@@ -44,6 +59,12 @@ namespace Lab2_1
         public void setDopColor(Color color)
         {
             dopColor = color;
+        }
+
+        public override string getInfo()
+        {
+            return MaxSpeed + ";" + MaxCountPassengers + ";" +
+                Weight + ";" + ColorBody.Name + ";" + leftBob + ";" + rightBob + ";" + dopColor.Name;
         }
     }
 }
