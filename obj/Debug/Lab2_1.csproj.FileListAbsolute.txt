@@ -1,0 +1,27 @@
+c:\users\user\documents\visual studio 2015\Projects\Lab2_1\bin\Debug\Lab2_1.exe.config
+c:\users\user\documents\visual studio 2015\Projects\Lab2_1\bin\Debug\Lab2_1.exe
+c:\users\user\documents\visual studio 2015\Projects\Lab2_1\bin\Debug\Lab2_1.pdb
+c:\users\user\documents\visual studio 2015\Projects\Lab2_1\obj\Debug\Lab2_1.csprojResolveAssemblyReference.cache
+c:\users\user\documents\visual studio 2015\Projects\Lab2_1\obj\Debug\Lab2_1.Form1.resources
+c:\users\user\documents\visual studio 2015\Projects\Lab2_1\obj\Debug\Lab2_1.Properties.Resources.resources
+c:\users\user\documents\visual studio 2015\Projects\Lab2_1\obj\Debug\Lab2_1.csproj.GenerateResource.Cache
+c:\users\user\documents\visual studio 2015\Projects\Lab2_1\obj\Debug\Lab2_1.exe
+c:\users\user\documents\visual studio 2015\Projects\Lab2_1\obj\Debug\Lab2_1.pdb
+C:\Users\User-\Desktop\для Лёши\институт\2 курс\Программирование\Lab2_1\bin\Debug\Lab2_1.exe.config
+C:\Users\User-\Desktop\для Лёши\институт\2 курс\Программирование\Lab2_1\obj\Debug\Lab2_1.exe
+C:\Users\User-\Desktop\для Лёши\институт\2 курс\Программирование\Lab2_1\obj\Debug\Lab2_1.pdb
+C:\Users\User-\Desktop\для Лёши\институт\2 курс\Программирование\Lab2_1\bin\Debug\Lab2_1.exe
+C:\Users\User-\Desktop\для Лёши\институт\2 курс\Программирование\Lab2_1\bin\Debug\Lab2_1.pdb
+C:\Users\User-\Desktop\для Лёши\институт\2 курс\Программирование\Lab2_1\obj\Debug\Lab2_1.csprojResolveAssemblyReference.cache
+C:\Users\User-\Desktop\для Лёши\институт\2 курс\Программирование\Lab2_1\obj\Debug\Lab2_1.Form1.resources
+C:\Users\User-\Desktop\для Лёши\институт\2 курс\Программирование\Lab2_1\obj\Debug\Lab2_1.Properties.Resources.resources
+C:\Users\User-\Desktop\для Лёши\институт\2 курс\Программирование\Lab2_1\obj\Debug\Lab2_1.csproj.GenerateResource.Cache
+C:\Users\user\Desktop\Lab2_1\bin\Debug\Lab2_1.exe.config
+C:\Users\user\Desktop\Lab2_1\obj\Debug\Lab2_1.exe
+C:\Users\user\Desktop\Lab2_1\obj\Debug\Lab2_1.pdb
+C:\Users\user\Desktop\Lab2_1\bin\Debug\Lab2_1.exe
+C:\Users\user\Desktop\Lab2_1\bin\Debug\Lab2_1.pdb
+C:\Users\user\Desktop\Lab2_1\obj\Debug\Lab2_1.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\Lab2_1\obj\Debug\Lab2_1.Form1.resources
+C:\Users\user\Desktop\Lab2_1\obj\Debug\Lab2_1.Properties.Resources.resources
+C:\Users\user\Desktop\Lab2_1\obj\Debug\Lab2_1.csproj.GenerateResource.Cache
