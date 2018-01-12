@@ -37,3 +37,4 @@ C:\Users\user\Desktop\прога лаб 3 к 4\Lab2_1\obj\Debug\Lab2_1.csprojRes
 C:\Users\user\Desktop\прога лаб 3 к 4\Lab2_1\obj\Debug\Lab2_1.Form1.resources
 C:\Users\user\Desktop\прога лаб 3 к 4\Lab2_1\obj\Debug\Lab2_1.Properties.Resources.resources
 C:\Users\user\Desktop\прога лаб 3 к 4\Lab2_1\obj\Debug\Lab2_1.csproj.GenerateResource.Cache
+C:\Users\user\Desktop\прога лаб 3 к 4\Lab2_1\obj\Debug\Lab2_1.Form2.resources

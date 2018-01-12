@@ -40,5 +40,10 @@ namespace Lab2_1
 			}
 			base.drawSportCat(g);
         }
+
+        public void setDopColor(Color color)
+        {
+            dopColor = color;
+        }
     }
 }

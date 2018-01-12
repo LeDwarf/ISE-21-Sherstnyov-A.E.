@@ -13,6 +13,9 @@ namespace Lab2_1
 	public partial class Form1 : Form
 	{
 		Parking parking;
+
+        Form2 form;
+
 		public Form1()
 		{
 			InitializeComponent();
@@ -105,7 +108,34 @@ namespace Lab2_1
             Draw();
         }
 
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
 
+        }
+
+        private void buttonRequest_Click(object sender, EventArgs e)
+        {
+            form = new Form2();
+            form.AddEvent(AddCat);
+            form.Show();          
+        }
+
+        private void AddCat(ITransport cat)
+        {
+            if (cat != null)
+            {
+                int place = parking.PutCatInParking(cat);
+                if (place > -1)
+                {
+                    Draw();
+                    MessageBox.Show("Ваше место " + place);
+                }
+                else
+                {
+                    MessageBox.Show("Не удалось пришвартовать судно ");
+                }
+            }
+        }
     }
 }
 

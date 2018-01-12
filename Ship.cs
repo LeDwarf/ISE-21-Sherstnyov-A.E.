@@ -36,6 +36,9 @@ namespace Lab2_1
             countPassengers = 0;
             return count;
         }
-
+        public virtual void setMainColor(Color color)
+        {
+            ColorBody = color;
+        }
     }
 }
