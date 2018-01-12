@@ -186,6 +186,11 @@ namespace Lab2_1
                 Draw();
             }
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            parking.Sort();
+        }
     }
 }
 

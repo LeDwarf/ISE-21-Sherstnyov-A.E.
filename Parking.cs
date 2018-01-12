@@ -56,14 +56,12 @@ namespace Lab2_1
         public void Draw(Graphics g)
         {
             DrawMarking(g);
-            for (int i = 0; i < countPlaces; i++)
+            int i = 0;
+            foreach(var cat in parkingStages[currentLevel] )
             {
-                var cat = parkingStages[currentLevel][i];
-                if (cat != null)
-                {
                     cat.setPosition(10 + (210 * (i / 5)), 10 + (80 * (i % 5)));
                     cat.drawCat(g);
-                }
+                i++;
             }
         }
 
@@ -191,6 +189,11 @@ namespace Lab2_1
                 }
             }
             return true;
+        }
+
+        public void Sort()
+        {
+            parkingStages.Sort();
         }
     }
 }

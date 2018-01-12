@@ -50,3 +50,15 @@ C:\Users\user\Desktop\прога лаб 5 в 6\Lab2_1\obj\Debug\Lab2_1.Propertie
 C:\Users\user\Desktop\прога лаб 5 в 6\Lab2_1\obj\Debug\Lab2_1.csproj.GenerateResource.Cache
 C:\Users\user\Desktop\прога лаб 5 в 6\Lab2_1\bin\Debug\NLog.dll
 C:\Users\user\Desktop\прога лаб 5 в 6\Lab2_1\bin\Debug\NLog.xml
+C:\Users\user\Desktop\прога лаб 7 в 8\Lab2_1\bin\Debug\Lab2_1.exe.config
+C:\Users\user\Desktop\прога лаб 7 в 8\Lab2_1\obj\Debug\Lab2_1.exe
+C:\Users\user\Desktop\прога лаб 7 в 8\Lab2_1\obj\Debug\Lab2_1.pdb
+C:\Users\user\Desktop\прога лаб 7 в 8\Lab2_1\obj\Debug\Lab2_1.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\прога лаб 7 в 8\Lab2_1\obj\Debug\Lab2_1.Form1.resources
+C:\Users\user\Desktop\прога лаб 7 в 8\Lab2_1\obj\Debug\Lab2_1.Form2.resources
+C:\Users\user\Desktop\прога лаб 7 в 8\Lab2_1\obj\Debug\Lab2_1.Properties.Resources.resources
+C:\Users\user\Desktop\прога лаб 7 в 8\Lab2_1\obj\Debug\Lab2_1.csproj.GenerateResource.Cache
+C:\Users\user\Desktop\прога лаб 7 в 8\Lab2_1\bin\Debug\Lab2_1.exe
+C:\Users\user\Desktop\прога лаб 7 в 8\Lab2_1\bin\Debug\Lab2_1.pdb
+C:\Users\user\Desktop\прога лаб 7 в 8\Lab2_1\bin\Debug\NLog.dll
+C:\Users\user\Desktop\прога лаб 7 в 8\Lab2_1\bin\Debug\NLog.xml

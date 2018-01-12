@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Lab2_1
 {
-    class Cat : Boat
+    class Cat : Boat, IComparable<Cat>, IEquatable<Cat>
     {
         private bool leftBob;
         private bool rightBob;
@@ -65,6 +65,69 @@ namespace Lab2_1
         {
             return MaxSpeed + ";" + MaxCountPassengers + ";" +
                 Weight + ";" + ColorBody.Name + ";" + leftBob + ";" + rightBob + ";" + dopColor.Name;
+        }
+
+        public int CompareTo(Cat other)
+        {
+            var res = (this is Cat).CompareTo(other is Cat);
+            if(res != 0)
+            {
+                return res;
+            }
+            if (leftBob != other.leftBob)
+            {
+                return leftBob.CompareTo(other.leftBob);
+            }
+            if (rightBob != other.rightBob)
+            {
+                return rightBob.CompareTo(other.rightBob);
+            }
+            if (dopColor != other.dopColor)
+            {
+                return dopColor.Name.CompareTo(other.dopColor.Name);
+            }
+            return 0;
+        }
+        public bool Equals(Cat other)
+        {
+            var res = (this is Cat).Equals(other is Cat);
+            if (!res)
+            {
+                return res;
+            }
+            if (leftBob != other.leftBob)
+            {
+                return false;
+            }
+            if (rightBob != other.rightBob)
+            {
+                return false;
+            }
+            if (dopColor != other.dopColor)
+            {
+                return false;
+            }
+            return true;
+        }
+        public override bool Equals(object obj)
+        {
+            if (obj == null)
+            {
+                return false;
+            }
+            Cat boatObj = obj as Cat;
+            if (boatObj == null)
+            {
+                return false;
+            }
+            else
+            {
+                return Equals(boatObj);
+            }
+        }
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
         }
     }
 }

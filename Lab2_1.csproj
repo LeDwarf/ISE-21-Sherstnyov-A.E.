@@ -67,6 +67,7 @@
     </Compile>
     <Compile Include="ITransport.cs" />
     <Compile Include="Parking.cs" />
+    <Compile Include="ParkingAlreadyHaveException.cs" />
     <Compile Include="ParkingIndexOutofrangeException.cs" />
     <Compile Include="ParkingOverflowException.cs" />
     <Compile Include="Program.cs" />
