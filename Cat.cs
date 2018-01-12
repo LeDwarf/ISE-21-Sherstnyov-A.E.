@@ -27,16 +27,16 @@ namespace Lab2_1
             if (leftBob)
             {
                 Brush br = new SolidBrush(dopColor);
-                g.FillEllipse(br, startPosX + 1, startPosY-15 + 1, 25, 25);
-				g.FillEllipse(br, startPosX + 1 + 70, startPosY-15 + 1, 25, 25);				
-                g.FillRectangle(br, startPosX + 10, startPosY-15, 72, 28);
+                g.FillEllipse(br, startPosX + 1, startPosY-5 + 1, 25, 25);
+				g.FillEllipse(br, startPosX + 1 + 70, startPosY-5 + 1, 25, 25);				
+                g.FillRectangle(br, startPosX + 10, startPosY-5, 72, 28);
             }
             if (rightBob)
             {
                 Brush br = new SolidBrush(dopColor);
-				g.FillEllipse(br, startPosX + 1, startPosY+15 + 1 + 30, 25, 25);
-				g.FillEllipse(br, startPosX + 1 + 70, startPosY+15 + 1 + 30, 25, 25);
-				g.FillRectangle(br, startPosX + 10, startPosY+15 -1 +30, 72, 30);
+				g.FillEllipse(br, startPosX + 1, startPosY+5 + 30, 25, 25);
+				g.FillEllipse(br, startPosX + 1 + 70, startPosY+5 + 30, 25, 25);
+				g.FillRectangle(br, startPosX + 10, startPosY+3 +30, 72, 28);
 			}
 			base.drawSportCat(g);
         }
