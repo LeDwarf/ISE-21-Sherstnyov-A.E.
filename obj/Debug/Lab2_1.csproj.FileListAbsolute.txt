@@ -25,3 +25,15 @@ C:\Users\user\Desktop\Lab2_1\obj\Debug\Lab2_1.csprojResolveAssemblyReference.cac
 C:\Users\user\Desktop\Lab2_1\obj\Debug\Lab2_1.Form1.resources
 C:\Users\user\Desktop\Lab2_1\obj\Debug\Lab2_1.Properties.Resources.resources
 C:\Users\user\Desktop\Lab2_1\obj\Debug\Lab2_1.csproj.GenerateResource.Cache
+C:\Users\user\Desktop\прога лаб 2 к 3\Lab2_1\bin\Debug\Lab2_1.exe.config
+C:\Users\user\Desktop\прога лаб 2 к 3\Lab2_1\obj\Debug\Lab2_1.exe
+C:\Users\user\Desktop\прога лаб 2 к 3\Lab2_1\obj\Debug\Lab2_1.pdb
+C:\Users\user\Desktop\прога лаб 3 к 4\Lab2_1\bin\Debug\Lab2_1.exe.config
+C:\Users\user\Desktop\прога лаб 3 к 4\Lab2_1\obj\Debug\Lab2_1.exe
+C:\Users\user\Desktop\прога лаб 3 к 4\Lab2_1\obj\Debug\Lab2_1.pdb
+C:\Users\user\Desktop\прога лаб 3 к 4\Lab2_1\bin\Debug\Lab2_1.exe
+C:\Users\user\Desktop\прога лаб 3 к 4\Lab2_1\bin\Debug\Lab2_1.pdb
+C:\Users\user\Desktop\прога лаб 3 к 4\Lab2_1\obj\Debug\Lab2_1.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\прога лаб 3 к 4\Lab2_1\obj\Debug\Lab2_1.Form1.resources
+C:\Users\user\Desktop\прога лаб 3 к 4\Lab2_1\obj\Debug\Lab2_1.Properties.Resources.resources
+C:\Users\user\Desktop\прога лаб 3 к 4\Lab2_1\obj\Debug\Lab2_1.csproj.GenerateResource.Cache

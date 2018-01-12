@@ -16,16 +16,26 @@ namespace Lab2_1
 		public Form1()
 		{
 			InitializeComponent();
-			parking = new Parking();
+			parking = new Parking(5);
+            for(int i = 1; i<6; i++)
+            {
+                listBox1.Items.Add("Уровень"+i);
+            }
+            listBox1.SelectedIndex = parking.getCurrentLevel;
 			Draw();
 		}
 
+
+
 		private void Draw()
 		{
-			Bitmap bmp = new Bitmap(pictureBox1.Width, pictureBox1.Height);
-			Graphics gr = Graphics.FromImage(bmp);
-			parking.Draw(gr, pictureBox1.Width, pictureBox1.Height);
-			pictureBox1.Image = bmp;
+            if (listBox1.SelectedIndex > -1)
+            {
+                Bitmap bmp = new Bitmap(pictureBox1.Width, pictureBox1.Height);
+                Graphics gr = Graphics.FromImage(bmp);
+                parking.Draw(gr);
+                pictureBox1.Image = bmp;
+            }		
 		}
 
 		private void button1_Click(object sender, EventArgs e)
@@ -33,8 +43,8 @@ namespace Lab2_1
 			ColorDialog dialog = new ColorDialog();
 			if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
 			{
-				var car = new Boat(100, 4, 1000, dialog.Color);
-				int place = parking.PutCatInParking(car);
+				var cat = new Boat(100, 4, 1000, dialog.Color);
+				int place = parking.PutCatInParking(cat);
 				Draw();
 				MessageBox.Show("Ваше место: " + place);
 			}
@@ -48,28 +58,54 @@ namespace Lab2_1
 				ColorDialog dialogDop = new ColorDialog();
 				if (dialogDop.ShowDialog() == System.Windows.Forms.DialogResult.OK)
 				{
-					var car = new Cat(100, 4, 1000, dialog.Color, true, true, dialogDop.Color);
-					int place = parking.PutCatInParking(car);
+					var cat = new Cat(100, 4, 1000, dialog.Color, true, true, dialogDop.Color);
+					int place = parking.PutCatInParking(cat);
 					Draw();
 					MessageBox.Show("Ваше место: " + place);
 				}
 			}
 		}
 
-		private void buttonTake_Click(object sender, EventArgs e)
-		{
-			if (maskedTextBox1.Text != "")
-			{
-				var car = parking.GetCatInParking(Convert.ToInt32(maskedTextBox1.Text));
+        private void buttonTake_Click(object sender, EventArgs e)
+        {
+            if (listBox1.SelectedIndex > -1)
+            {//Прежде чем забрать машину, надо выбрать с какого уровня будем забирать
+                string level = listBox1.Items[listBox1.SelectedIndex].ToString();
+                if (maskedTextBox1.Text != "")
+                {
+                    ITransport car = parking.GetCatInParking(Convert.ToInt32(maskedTextBox1.Text));
+                    if (car != null)
+                    {//если удалось забрать, то отрисовываем
+                        Bitmap bmp = new Bitmap(pictureBox1.Width, pictureBox1.Height);
+                        Graphics gr = Graphics.FromImage(bmp);
+                        car.setPosition(5, 5);
+                        car.drawCat(gr);
+                        pictureBox1.Image = bmp;
+                        Draw();
+                    }
+                    else
+                    {//иначесообщаемобэтом
+                        MessageBox.Show("Извинте, на этом месте нет машины");
+                    }
+                }
+            }
+        }    
 
-				Bitmap bmp = new Bitmap(pictureBox2.Width, pictureBox2.Height);
-				Graphics gr = Graphics.FromImage(bmp);
-				car.setPosition(5, 5);
-				car.drawCat(gr);
-				pictureBox2.Image = bmp;
-				Draw();
-			}
-		}
-	}
+        private void button4_Click(object sender, EventArgs e)
+        {
+            parking.LevelDown();
+            listBox1.SelectedIndex = parking.getCurrentLevel;
+            Draw();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            parking.LevelUp();
+            listBox1.SelectedIndex = parking.getCurrentLevel;
+            Draw();
+        }
+
+
+    }
 }
 
