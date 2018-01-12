@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using NLog;
 
 namespace Lab2_1
 {
@@ -16,9 +17,12 @@ namespace Lab2_1
 
         Form2 form;
 
+        private Logger log;
+
 		public Form1()
 		{
-			InitializeComponent();
+            InitializeComponent();
+            log = LogManager.GetCurrentClassLogger();
 			parking = new Parking(5);
             for(int i = 1; i<6; i++)
             {
@@ -48,7 +52,7 @@ namespace Lab2_1
 			{
 				var cat = new Boat(100, 4, 1000, dialog.Color);
 				int place = parking.PutCatInParking(cat);
-				Draw();
+                Draw();
 				MessageBox.Show("Ваше место: " + place);
 			}
 		}
@@ -75,10 +79,10 @@ namespace Lab2_1
             {//Прежде чем забрать машину, надо выбрать с какого уровня будем забирать
                 string level = listBox1.Items[listBox1.SelectedIndex].ToString();
                 if (maskedTextBox1.Text != "")
-                {
-                    ITransport car = parking.GetCatInParking(Convert.ToInt32(maskedTextBox1.Text));
-                    if (car != null)
+                {                    
+                    try
                     {//если удалось забрать, то отрисовываем
+                        ITransport car = parking.GetCatInParking(Convert.ToInt32(maskedTextBox1.Text));
                         Bitmap bmp = new Bitmap(pictureBox1.Width, pictureBox1.Height);
                         Graphics gr = Graphics.FromImage(bmp);
                         car.setPosition(5, 5);
@@ -86,9 +90,13 @@ namespace Lab2_1
                         pictureBox1.Image = bmp;
                         Draw();
                     }
-                    else
-                    {//иначесообщаемобэтом
-                        MessageBox.Show("Извинте, на этом месте нет машины");
+                    catch (ParkingIndexOutofrangeException ex)
+                    {
+                        MessageBox.Show(ex.Message, "Неверный номер", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message, "Общая ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
             }
@@ -98,6 +106,7 @@ namespace Lab2_1
         {
             parking.LevelDown();
             listBox1.SelectedIndex = parking.getCurrentLevel;
+            log.Info("Переход на уровень ниже. Текущий уровень: " + parking.getCurrentLevel);
             Draw();
         }
 
@@ -105,6 +114,7 @@ namespace Lab2_1
         {
             parking.LevelUp();
             listBox1.SelectedIndex = parking.getCurrentLevel;
+            log.Info("Переход на уровень выше. Текущий уровень: " + parking.getCurrentLevel);
             Draw();
         }
 
@@ -124,15 +134,20 @@ namespace Lab2_1
         {
             if (cat != null)
             {
-                int place = parking.PutCatInParking(cat);
-                if (place > -1)
+                try
                 {
-                    Draw();
-                    MessageBox.Show("Ваше место " + place);
+                    int place = parking.PutCatInParking(cat);
+                        Draw();
+                        MessageBox.Show("Ваше место " + place);
+                    log.Info("Добавлено судно на место : " + place);
                 }
-                else
+                catch (ParkingOverflowException ex)
                 {
-                    MessageBox.Show("Не удалось пришвартовать судно ");
+                    MessageBox.Show(ex.Message, "Ошибка переполнения", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Общая ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }

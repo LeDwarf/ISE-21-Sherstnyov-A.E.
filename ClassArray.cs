@@ -89,7 +89,7 @@ namespace Lab2_1
         {
             if(p.places.Count == p.maxCount)
             {
-                return -1;
+                throw new ParkingOverflowException();
             }
             for (int i =0; i<p.places.Count; i++)
             {
@@ -111,7 +111,7 @@ namespace Lab2_1
                 p.places.Remove(index);
                 return cat;
             }
-            return p.defaultValue;
+            throw new ParkingIndexOutofrangeException();
         }
 
         private bool CheckFreePlace(int index)
