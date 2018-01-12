@@ -1,0 +1,9 @@
+c:\users\user-\documents\visual studio 2015\Projects\Lab_Salad\Lab_Salad\bin\Debug\Lab_Salad.exe.config
+c:\users\user-\documents\visual studio 2015\Projects\Lab_Salad\Lab_Salad\bin\Debug\Lab_Salad.exe
+c:\users\user-\documents\visual studio 2015\Projects\Lab_Salad\Lab_Salad\bin\Debug\Lab_Salad.pdb
+c:\users\user-\documents\visual studio 2015\Projects\Lab_Salad\Lab_Salad\obj\Debug\Lab_Salad.csprojResolveAssemblyReference.cache
+c:\users\user-\documents\visual studio 2015\Projects\Lab_Salad\Lab_Salad\obj\Debug\Lab_Salad.Properties.Resources.resources
+c:\users\user-\documents\visual studio 2015\Projects\Lab_Salad\Lab_Salad\obj\Debug\Lab_Salad.csproj.GenerateResource.Cache
+c:\users\user-\documents\visual studio 2015\Projects\Lab_Salad\Lab_Salad\obj\Debug\Lab_Salad.exe
+c:\users\user-\documents\visual studio 2015\Projects\Lab_Salad\Lab_Salad\obj\Debug\Lab_Salad.pdb
+c:\users\user-\documents\visual studio 2015\Projects\Lab_Salad\Lab_Salad\obj\Debug\Lab_Salad.Form1.resources
