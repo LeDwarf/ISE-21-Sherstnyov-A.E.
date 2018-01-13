@@ -80,8 +80,7 @@ namespace Lab2_1
         public override void moveCat(Graphics g)
         {
 			startPosX += MaxSpeed;
-				/*(MaxSpeed * 50 / (float)Weight) /
-					(countPassengers == 0 ? 1 : countPassengers);*/
+
             drawCat(g);
         }
 
@@ -93,18 +92,14 @@ namespace Lab2_1
         protected virtual void drawSportCat(Graphics g)
         {
             Pen pen = new Pen(Color.Black);
-           /* g.DrawEllipse(pen, startPosX, startPosY, 20, 20);
-            g.DrawEllipse(pen, startPosX, startPosY +30, 20, 20);
-            g.DrawEllipse(pen, startPosX +70, startPosY, 20, 20);
-            g.DrawEllipse(pen, startPosX +70, startPosY +30, 20, 20);
-            g.DrawRectangle(pen, startPosX-1, startPosY + 10, 93, 30); */
+
 
             Brush br = new SolidBrush(ColorBody);
             g.FillEllipse(br, startPosX+1, startPosY+1, 20, 20);
             g.FillEllipse(br, startPosX+1, startPosY+1 + 30, 20, 20);
             g.FillEllipse(br, startPosX+1 + 70, startPosY+1, 20, 20);
             g.FillEllipse(br, startPosX+1 + 70, startPosY+1 + 30, 20, 20);
-            //g.FillRectangle(br, startPosX, startPosY + 10, 92, 30);
+
             g.FillRectangle(br, startPosX+10, startPosY, 72, 20);
             g.FillRectangle(br, startPosX+10, startPosY, 72, 53);
 
